@@ -1,0 +1,54 @@
+{
+  "pkgName": "xuperchaincontract",
+  "appPtfType":6,
+  "ccLanguage":0,
+  "mainPath":"",
+  "ccName": "bsnbase",
+  "initParam":"",
+  "pkgVersion": "1.0.0",
+  "pkgFee":0,
+  "publishUser":"Beijing Red Date Technoligy Co., Ltd.",
+  "pkgDesc":"This is a basic contract package instance, which provides contracts for basic operations such as adding, deleting, modifying and querying data. You can further expand more functions based on it according to your business requirements.",
+  "funcs": [
+    {
+      "chaincodeViewName": "save data",
+      "chaincodeFunc": "insert_data",
+      "chaincodeFuncType": "1",
+      "pkgType": "saas",
+      "nodes": []
+    },
+    {
+      "chaincodeViewName": "update data",
+      "chaincodeFunc": "update_data",
+      "chaincodeFuncType": "1",
+      "pkgType": "saas",
+      "nodes": []
+    },
+    {
+      "chaincodeViewName": "delete data",
+      "chaincodeFunc": "remove_data",
+      "chaincodeFuncType": "1",
+      "pkgType": "saas",
+      "nodes": []
+    },
+    {
+      "chaincodeViewName": "query data",
+      "chaincodeFunc": "select_data",
+      "chaincodeFuncType": "2",
+      "pkgType": "saas",
+      "nodes": []
+    }
+  ],
+  "roles": [
+    {
+      "roleName": "SysAdmin",
+      "appDesc": "This role owns adding, deleting, modifying and querying operation rights.",
+      "funcs": [
+        "insert_data",
+        "update_data",
+        "remove_data",
+        "select_data"
+      ]
+    }
+  ]
+}
